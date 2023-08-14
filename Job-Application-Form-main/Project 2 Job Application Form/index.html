@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application Form</title>
+    <!-- CSS File -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="apply_box">
+        <h1>
+          Job Application
+          <span class="title_small">(Software developer)</span>
+        </h1>
+        <!-- Start Form Section-->
+        <form action="">
+          <!-- Start first name section -->
+          <div class="form_container">
+            <div class="form_control">
+              <label for="first_name">First Name</label>
+              <input
+                id="first_name"
+                name="first_name"
+                placeholder="Enter first name"
+                required
+              />
+            </div>
+            <!-- End first name section -->
+
+            <!-- Start last name section -->
+            <div class="form_control">
+              <label for="last_name">Last Name</label>
+              <input
+                id="last_name"
+                name="last_name"
+                placeholder="Enter last name"
+                required
+              />
+            </div>
+            <!-- End last anme section -->
+
+            <!-- Start email section -->
+            <div class="form_control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter email"
+                required
+              />
+            </div>
+            <!-- End email section -->
+
+            <!-- Start job role section -->
+            <div class="form_control">
+              <label for="job_role">Job Role</label>
+              <select id="job_role" name="job_role">
+                <option value="">Select Job Role</option>
+                <option value="frontend">Frontend Developer</option>
+                <option value="backend">Backend Developer</option>
+                <option value="full_stack">Full Stack Developer</option>
+                <option value="ui_ux">UI UX Designer</option>
+                <option value="ui_ux">Application Developer</option>
+                <option value="ui_ux">Game Developer</option>
+              </select>
+            </div>
+            <!-- End job role section -->
+
+            <!-- Start address section -->
+            <div class="textarea_control">
+              <label for="address">Address</label>
+              <textarea
+                id="address"
+                name="address"
+                row="4"
+                column="50"
+                aria-placeholder="Enter Address"
+              ></textarea>
+            </div>
+            <!-- End address section -->
+
+            <!-- Start city section -->
+            <div class="form_control">
+              <label for="city">City</label>
+              <input id="city" name="city" placeholder="Enter city name" />
+            </div>
+            <!-- End city section -->
+
+            <!-- Start zip-code section -->
+            <div class="form_control">
+              <label for="zipcode">Zip code</label>
+              <input
+                type="number"
+                id="zipcode"
+                name="zipcode"
+                placeholder="Enter pincode name"
+              />
+            </div>
+            <!-- End zip-code section -->
+
+            <!-- Start date section -->
+            <div class="form_control">
+              <label for="date">Date</label>
+              <input
+                value="2022-07-29"
+                type="date"
+                id="date"
+                name="date"
+                placeholder="Enter date name"
+              />
+            </div>
+            <!-- End date section  -->
+
+            <!-- Start CV section -->
+            <div class="form_control">
+              <label for="upload">Upload your CV</label>
+              <input type="file" id="upload" name="upload" />
+            </div>
+            <!-- End CV section  -->
+          </div>
+
+          <!-- Start button section -->
+          <div class="button_container">
+            <button type="submit"><span>Apply Now </span></button>
+          </div>
+          <!-- End button section -->
+        </form>
+        <!-- End Form Section -->
+      </div>
+    </div>
+  </body>
+</html>
